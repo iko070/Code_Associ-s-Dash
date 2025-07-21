@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decision Support Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 1) MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- 2) Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Plot Zone -->
+    <div class="charts">
+      <!-- Formular Zone -->
+      <div class="formula">
+        <p>Surrogate Yield Function:</p>
+        <p>
+          $$Y(T,t,R) \;=\; 100 - \sqrt{\,0.02\,(T-925)^2 \;+\;0.001\,(t-1580)^2 \;+\;20\,(R-0.85)^2\,}$$
+        </p>
+      </div>
+
+      <!-- Two canvas -->
+      <canvas id="yieldChart"></canvas>
+      <canvas id="paretoChart"></canvas>
+    </div>
+
+    <!-- Right Bar -->
+    <div class="controls">
+      <label for="temp">Temperature (°C)</label>
+      <input type="range" id="temp" min="800" max="950" value="925">
+      <span id="temp-val" class="slider-value">925</span>
+
+      <label for="time">Hold Time (min)</label>
+      <input type="range" id="time" min="1440" max="1680" value="1580">
+      <span id="time-val" class="slider-value">1580</span>
+
+      <label for="rate">Cooling Rate (°C/min)</label>
+      <input type="range" id="rate" min="0.8" max="1.2" step="0.01" value="0.85">
+      <span id="rate-val" class="slider-value">0.85</span>
+    </div>
+  </div>
+
+  <!-- Put script.js after body，make sure DOM is available -->
+  <script src="script.js"></script>
+</body>
+</html>
