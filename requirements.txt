@@ -1,0 +1,5 @@
+numpy
+pydoe2
+scikit-learn
+deap
+pyswarms
