@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; }
+.container { display: flex; height: 100vh; }
+.charts { flex: 3; padding: 20px; display: flex; flex-direction: column; }
+.charts canvas { flex: 1; margin-bottom: 20px; }
+.controls {
+  flex: 1; padding: 20px; border-left: 1px solid #ccc;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.controls label { margin-top: 20px; font-weight: bold; }
+.controls input[type=range] { width: 100%; }
+.controls .control-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  
+  .slider-value {
+    min-width: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
