@@ -56,6 +56,6 @@ This will search for the best configuration of your optimizer for improved resul
 | `Dashboard_Parameters/`     | Local dashboard files (open `index.html`)  |
 
 ## 📝 License
-This project is open source and available under the MIT License.
+This project is open source and available under the [MIT License](LICENSE).
 
 Let data guide your decisions — and let this project be your compass. 🧭
