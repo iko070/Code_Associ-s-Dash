@@ -31,11 +31,13 @@ pip install -r requirements.txt
 python main.py
 ```
 This generates initial results for the multi-objective optimization problem.
+
 3. **Optimize Hyperparameters**
 ```bash
 python Hyperparameters_tuning.py
 ```
 This will search for the best configuration of your optimizer for improved results.
+
 4. **Launch the Dashboard**
 - Download or clone the folder Dashboard_Parameters/ including all its contents.
 - Locate and double-click index.html inside that folder.
